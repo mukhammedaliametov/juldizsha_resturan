@@ -1,18 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juldizsha Restaran</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Juldizsha Restaran</title>
+
+  <!-- Import fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
-    <!-- start of header -->
-    <header>
-        <h1>Welcome!</h1>
-    </header>
-    <!-- end of header -->
 
+  <!-- start of header -->
+  <header>
+    <h1 class="logo">Juldizsha.R</h1>
+    <div class="hamburger">
+      <i class="fa-solid fa-bars"></i>
+      <i class="fa-solid fa-times"></i>
+    </div>
+    <ul class="nav">
+      <li onclick="navMenuClose()">
+        <a href="">Home</a>
+      </li>
+      <li onclick="navMenuClose()">
+        <a href="">About</a>
+      </li>
+      <li onclick="navMenuClose()">
+        <a href="">Menu</a>
+      </li>
+      <li style="border-bottom: none;" onclick="navMenuClose()">
+        <a href="">Contact</a>
+      </li>
+    </ul>
+  </header>
+  <!-- end of header -->
+<script src="js/script.js"></script>
 </body>
+
 </html>

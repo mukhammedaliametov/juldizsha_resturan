@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Mogra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.521);
+  display: flex;
+  padding: 10px 40px; }
+  header .logo {
+    padding: 10px 20px;
+    font-family: "Mogra", cursive;
+    color: #ffd901; }
+  header .hamburger {
+    display: none; }
+  header .nav {
+    display: flex; }
+  header .nav li {
+    padding: 10px;
+    list-style-type: none; }
+    header .nav li a {
+      font-family: "Roboto", sans-serif;
+      font-size: 1.3rem;
+      text-decoration: none;
+      color: #fff; }
+  @media only screen and (max-width: 920px) {
+    header {
+      padding: 0px 10px; }
+      header .nav {
+        position: absolute;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.521);
+        top: 58px;
+        width: 100%;
+        left: 0;
+        text-align: center;
+        padding-top: 0px;
+        height: 0;
+        transition: .5s ease-in-out; }
+        header .nav li {
+          border-bottom: 1px solid #fff;
+          padding: 30px 0px;
+          margin: 0px 30px;
+          display: none; }
+        header .nav.active {
+          height: 50vh;
+          padding-top: 70px; }
+          header .nav.active li {
+            display: block; }
+      header .hamburger {
+        display: block;
+        font-size: 1.5rem;
+        padding-right: 10px;
+        color: #fff; }
+        header .hamburger .fa-times {
+          display: none; }
+        header .hamburger.active .fa-times {
+          display: block; }
+        header .hamburger.active .fa-bars {
+          display: none; } }
+
+/*# sourceMappingURL=style.css.map */
