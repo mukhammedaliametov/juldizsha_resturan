@@ -1,90 +1,156 @@
-@import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
-$global_font: 'Mogra', cursive;
-$global_font2: 'Roboto', sans-serif;
-$global_color: #ffd901;
+$global_font: "Lobster Two", cursive;
+$global_font2: "Roboto", sans-serif;
+$global_font3: "Raleway", sans-serif;
+$global_color: #f0c308;
 
 @mixin global-logo {
-  padding: 10px 20px;
   font-family: $global_font;
   color: $global_color;
+}
+
+@mixin global_button {
+  color: #000;
+  background-color: $global_color;
+  padding: 10px 40px;
+  font-family: $global_font3;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 150px;
+  font-weight: 600;
 }
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.521);
-  display: flex;
-  padding: 10px 40px;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 20px 50px;
   .logo {
     @include global-logo;
+    cursor: pointer;
   }
-  .hamburger{
+  .hamburger {
     display: none;
   }
-  .nav{
+  .nav {
     display: flex;
   }
-  .nav li{
-    padding: 10px;
+  .nav li {
+    margin-left: 40px;
     list-style-type: none;
-    a{
-      font-family: $global_font2;
-      font-size: 1.3rem;
+    a {
+      font-family: $global_font3;
       text-decoration: none;
       color: #fff;
+      text-transform: capitalize;
+      transition: .5s ease;
+      &:hover{
+        border-bottom: 1px solid $global_color;
+        color: $global_color;
+      }
     }
   }
-  @media only screen and (max-width: 920px){
-    &{
-      padding: 0px 10px;
-      .nav{
+  @media only screen and (max-width: 920px) {
+    & {
+      padding: 20px 15px;
+      .nav {
         position: absolute;
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.521);
-        top: 58px;
+        top: 70px;
         width: 100%;
         left: 0;
         text-align: center;
         padding-top: 0px;
         height: 0;
-        transition: .5s ease-in-out;
-        li{
+        transition: 0.5s ease-in-out;
+        li {
           border-bottom: 1px solid #fff;
           padding: 30px 0px;
           margin: 0px 30px;
           display: none;
         }
-        &.active{
+        &.active {
           height: 50vh;
           padding-top: 70px;
-          li{
+          li {
             display: block;
           }
         }
       }
-      .hamburger{
+      .hamburger {
         display: block;
         font-size: 1.5rem;
         padding-right: 10px;
         color: #fff;
-        .fa-times{
+        .fa-times {
           display: none;
         }
-        &.active{
-          .fa-times{
+        &.active {
+          .fa-times {
             display: block;
           }
-          .fa-bars{
+          .fa-bars {
             display: none;
           }
         }
+      }
+    }
+  }
+}
+
+#home {
+  background-image: url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+  .home-title {
+    padding-left: 650px;
+    padding-top: 250px;
+    h1 {
+      font-size: 3rem;
+      font-family: $global_font;
+      color: $global_color;
+      padding: 10px 0px;
+    }
+    h3 {
+      @include global-logo;
+      font-size: 2rem;
+      padding: 5px 0px;
+    }
+    p {
+      font-size: 1.2rem;
+      font-family: $global_font2;
+      color: #fff;
+      width: 80%;
+      padding: 5px 0px;
+      margin-bottom: 20px;
+    }
+    a {
+      @include global_button;
+    }
+  }
+  @media only screen and (max-width: 920px){
+    &{
+
+      .home-title{
+        padding: 250px 20px;
+        background-color: #00000067;
       }
     }
   }

@@ -1,65 +1,141 @@
-@import url("https://fonts.googleapis.com/css2?family=Mogra&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box;
+}
 
 header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.521);
+  background-color: rgba(0, 0, 0, 0);
+  padding: 20px 50px;
+}
+header .logo {
+  font-family: "Lobster Two", cursive;
+  color: #f0c308;
+  cursor: pointer;
+}
+header .hamburger {
+  display: none;
+}
+header .nav {
   display: flex;
-  padding: 10px 40px; }
-  header .logo {
-    padding: 10px 20px;
-    font-family: "Mogra", cursive;
-    color: #ffd901; }
-  header .hamburger {
-    display: none; }
+}
+header .nav li {
+  margin-left: 40px;
+  list-style-type: none;
+}
+header .nav li a {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  transition: 0.5s ease;
+}
+header .nav li a:hover {
+  border-bottom: 1px solid #f0c308;
+  color: #f0c308;
+}
+@media only screen and (max-width: 920px) {
+  header {
+    padding: 20px 15px;
+  }
   header .nav {
-    display: flex; }
+    position: absolute;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.521);
+    top: 70px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    padding-top: 0px;
+    height: 0;
+    transition: 0.5s ease-in-out;
+  }
   header .nav li {
-    padding: 10px;
-    list-style-type: none; }
-    header .nav li a {
-      font-family: "Roboto", sans-serif;
-      font-size: 1.3rem;
-      text-decoration: none;
-      color: #fff; }
-  @media only screen and (max-width: 920px) {
-    header {
-      padding: 0px 10px; }
-      header .nav {
-        position: absolute;
-        flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.521);
-        top: 58px;
-        width: 100%;
-        left: 0;
-        text-align: center;
-        padding-top: 0px;
-        height: 0;
-        transition: .5s ease-in-out; }
-        header .nav li {
-          border-bottom: 1px solid #fff;
-          padding: 30px 0px;
-          margin: 0px 30px;
-          display: none; }
-        header .nav.active {
-          height: 50vh;
-          padding-top: 70px; }
-          header .nav.active li {
-            display: block; }
-      header .hamburger {
-        display: block;
-        font-size: 1.5rem;
-        padding-right: 10px;
-        color: #fff; }
-        header .hamburger .fa-times {
-          display: none; }
-        header .hamburger.active .fa-times {
-          display: block; }
-        header .hamburger.active .fa-bars {
-          display: none; } }
+    border-bottom: 1px solid #fff;
+    padding: 30px 0px;
+    margin: 0px 30px;
+    display: none;
+  }
+  header .nav.active {
+    height: 50vh;
+    padding-top: 70px;
+  }
+  header .nav.active li {
+    display: block;
+  }
+  header .hamburger {
+    display: block;
+    font-size: 1.5rem;
+    padding-right: 10px;
+    color: #fff;
+  }
+  header .hamburger .fa-times {
+    display: none;
+  }
+  header .hamburger.active .fa-times {
+    display: block;
+  }
+  header .hamburger.active .fa-bars {
+    display: none;
+  }
+}
+
+#home {
+  background-image: url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+}
+#home .home-title {
+  padding-left: 650px;
+  padding-top: 250px;
+}
+#home .home-title h1 {
+  font-size: 3rem;
+  font-family: "Lobster Two", cursive;
+  color: #f0c308;
+  padding: 10px 0px;
+}
+#home .home-title h3 {
+  font-family: "Lobster Two", cursive;
+  color: #f0c308;
+  font-size: 2rem;
+  padding: 5px 0px;
+}
+#home .home-title p {
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  width: 80%;
+  padding: 5px 0px;
+  margin-bottom: 20px;
+}
+#home .home-title a {
+  color: #000;
+  background-color: #f0c308;
+  padding: 10px 40px;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 150px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 920px) {
+  #home .home-title {
+    padding: 250px 20px;
+    background-color: rgba(0, 0, 0, 0.4039215686);
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
