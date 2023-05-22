@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+  scroll-behavior: smooth; }
 
 header {
   position: fixed;
@@ -15,79 +15,64 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: rgba(0, 0, 0, 0);
-  padding: 20px 50px;
-}
-header .logo {
-  font-family: "Lobster Two", cursive;
-  color: #f0c308;
-  cursor: pointer;
-}
-header .hamburger {
-  display: none;
-}
-header .nav {
-  display: flex;
-}
-header .nav li {
-  margin-left: 40px;
-  list-style-type: none;
-}
-header .nav li a {
-  font-family: "Raleway", sans-serif;
-  text-decoration: none;
-  color: #fff;
-  text-transform: capitalize;
-  transition: 0.5s ease;
-}
-header .nav li a:hover {
-  border-bottom: 1px solid #f0c308;
-  color: #f0c308;
-}
-@media only screen and (max-width: 920px) {
-  header {
-    padding: 20px 15px;
-  }
-  header .nav {
-    position: absolute;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.521);
-    top: 70px;
-    width: 100%;
-    left: 0;
-    text-align: center;
-    padding-top: 0px;
-    height: 0;
-    transition: 0.5s ease-in-out;
-  }
-  header .nav li {
-    border-bottom: 1px solid #fff;
-    padding: 30px 0px;
-    margin: 0px 30px;
-    display: none;
-  }
-  header .nav.active {
-    height: 50vh;
-    padding-top: 70px;
-  }
-  header .nav.active li {
-    display: block;
-  }
+  padding: 20px 50px; }
+  header .logo {
+    font-family: "Lobster Two", cursive;
+    color: #f0c308;
+    cursor: pointer; }
+  header.sticky {
+    background-color: rgba(0, 0, 0, 0.897); }
   header .hamburger {
-    display: block;
-    font-size: 1.5rem;
-    padding-right: 10px;
-    color: #fff;
-  }
-  header .hamburger .fa-times {
-    display: none;
-  }
-  header .hamburger.active .fa-times {
-    display: block;
-  }
-  header .hamburger.active .fa-bars {
-    display: none;
-  }
-}
+    display: none; }
+  header .nav {
+    display: flex; }
+  header .nav li {
+    margin-left: 40px;
+    list-style-type: none; }
+    header .nav li a {
+      font-family: "Raleway", sans-serif;
+      text-decoration: none;
+      color: #fff;
+      text-transform: capitalize;
+      transition: .5s ease; }
+      header .nav li a:hover {
+        border-bottom: 1px solid #f0c308;
+        color: #f0c308; }
+  @media only screen and (max-width: 920px) {
+    header {
+      padding: 20px 15px; }
+      header .nav {
+        position: absolute;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.521);
+        top: 70px;
+        width: 100%;
+        left: 0;
+        text-align: center;
+        padding-top: 0px;
+        height: 0;
+        transition: 0.5s ease-in-out; }
+        header .nav li {
+          border-bottom: 1px solid #fff;
+          padding: 30px 0px;
+          margin: 0px 30px;
+          display: none; }
+        header .nav.active {
+          height: 50vh;
+          padding-top: 70px; }
+          header .nav.active li {
+            display: block; }
+      header .hamburger {
+        display: block;
+        font-size: 1.5rem;
+        padding-right: 10px;
+        color: #fff; }
+        header .hamburger .fa-times {
+          display: none; }
+        header .hamburger.active .fa-times {
+          display: block; }
+        header .hamburger.active .fa-bars {
+          display: none; } }
 
 #home {
   background-image: url(../images/hero-bg.jpg);
@@ -95,47 +80,80 @@ header .nav li a:hover {
   background-position: center;
   background-attachment: fixed;
   min-height: 100vh;
-  width: 100%;
-}
-#home .home-title {
-  padding-left: 650px;
-  padding-top: 250px;
-}
-#home .home-title h1 {
-  font-size: 3rem;
-  font-family: "Lobster Two", cursive;
-  color: #f0c308;
-  padding: 10px 0px;
-}
-#home .home-title h3 {
-  font-family: "Lobster Two", cursive;
-  color: #f0c308;
-  font-size: 2rem;
-  padding: 5px 0px;
-}
-#home .home-title p {
-  font-size: 1.2rem;
-  font-family: "Roboto", sans-serif;
-  color: #fff;
-  width: 80%;
-  padding: 5px 0px;
-  margin-bottom: 20px;
-}
-#home .home-title a {
-  color: #000;
-  background-color: #f0c308;
-  padding: 10px 40px;
-  font-family: "Raleway", sans-serif;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 150px;
-  font-weight: 600;
-}
-@media only screen and (max-width: 920px) {
+  width: 100%; }
   #home .home-title {
-    padding: 250px 20px;
-    background-color: rgba(0, 0, 0, 0.4039215686);
-  }
-}
+    padding-left: 650px;
+    padding-top: 250px; }
+    #home .home-title h1 {
+      font-size: 3rem;
+      font-family: "Lobster Two", cursive;
+      color: #f0c308;
+      padding: 10px 0px; }
+    #home .home-title h3 {
+      font-family: "Lobster Two", cursive;
+      color: #f0c308;
+      font-size: 2rem;
+      padding: 5px 0px; }
+    #home .home-title p {
+      font-size: 1.2rem;
+      font-family: "Roboto", sans-serif;
+      color: #fff;
+      width: 80%;
+      padding: 5px 0px;
+      margin-bottom: 20px; }
+    #home .home-title a {
+      color: #000;
+      background-color: #f0c308;
+      padding: 10px 40px;
+      font-family: "Raleway", sans-serif;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 150px;
+      font-weight: 600; }
+  @media only screen and (max-width: 920px) {
+    #home .home-title {
+      padding: 250px 20px;
+      background-color: #00000067; } }
+
+#about {
+  width: 100%;
+  min-height: 70vh;
+  background-image: url(../images/3844902.webp);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 40px 150px; }
+  #about .section-title {
+    padding-top: 10px;
+    text-align: center;
+    font-family: "Lobster Two", cursive;
+    padding-bottom: 30px; }
+  #about .about-title {
+    background: #020024;
+    background: linear-gradient(165deg, #020024 6%, #141471 74%);
+    color: #f0c308;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: 30px 50px; }
+    #about .about-title .title-border {
+      border: 1px solid #fff;
+      height: 41vh;
+      padding: 10px; }
+      #about .about-title .title-border h1 {
+        font-family: "Raleway", sans-serif;
+        padding-bottom: 10px; }
+      #about .about-title .title-border p {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700; }
+  @media only screen and (max-width: 920px) {
+    #about {
+      padding: 10px 30px; }
+      #about .about-title {
+        padding: 20px 30px; }
+      #about h1 {
+        font-size: 1.7rem; }
+      #about p {
+        font-size: .68rem; } }
 
 /*# sourceMappingURL=style.css.map */
