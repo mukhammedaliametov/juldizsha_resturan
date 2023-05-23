@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css" />
   <title>Juldizsha Restaran</title>
 
@@ -30,7 +31,7 @@
         <a href="#about">Biz haqqimizda</a>
       </li>
       <li onclick="navMenuClose()">
-        <a href="">Menyu</a>
+        <a href="#menu">Menyu</a>
       </li>
       <li style="border-bottom: none" onclick="navMenuClose()">
         <a href="">Baylanis</a>
@@ -40,7 +41,8 @@
   <!-- end of header -->
   <!-- Start of home section -->
   <div id="home">
-    <div class="home-title">
+    <div class="home-title" data-aos="fade-left"
+    data-aos-duration="650">
       <h1>Web-Satyqa xosh kelipsiz!</h1>
       <h3>Juldizsha.R</h3>
       <p>
@@ -49,16 +51,17 @@
         qilsan'iz boladi.
         Web-Saytta milliy tag'amlar tabiladi.
       </p>
-      <a href="#" class="button">Menyu</a>
+      <a href="#menu" class="button">Menyu</a>
     </div>
   </div>
   <!-- end of home section -->
-  <!-- start of abot section -->
+  <!-- start of abuot section -->
   <div id="about">
     <div class="section-title">
-      <h1>Biz haqqimizda</h1>
+      <h1 data-aos="fade-up">Biz haqqimizda</h1>
     </div>
-    <div class="about-title">
+    <div class="about-title" data-aos="fade-up"
+    data-aos-duration="300">
       <div class="title-border">
         <h1>Juldizsha.R</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum expedita voluptatem nulla minus beatae
@@ -76,8 +79,53 @@
       </div>
     </div>
   </div>
-  <!-- end of abot section -->
+  <!-- end of abuuot section -->
+  <!-- start of menu  section -->
+  <div id="menu">
+    <h1 data-aos="fade-up">Menyu</h1>
+     <div class="cards">
+      <div class="card"  data-aos="flip-right"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1000">
+        <img src="./images/hero-bg.jpg" alt="">
+        <h2>Somsa $1</h2>
+      </div>
+      <div class="card" data-aos="fade-up"
+      data-aos-duration="1000">
+        <img src="./images/hero-bg.jpg" alt="">
+        <h2>Somsa $1</h2>
+      </div>
+      <div class="card"  data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1000">
+        <img src="./images/hero-bg.jpg" alt="">
+        <h2>Somsa $1</h2>
+      </div>
+      <div class="card"  data-aos="flip-right"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1000">
+        <img src="./images/hero-bg.jpg" alt="">
+        <h2>Somsa $1</h2>
+      </div>
+      <div class="card" data-aos="fade-up"
+      data-aos-duration="1000">
+        <img src="./images/hero-bg.jpg" alt="">
+        <h2>Somsa $1</h2>
+      </div>
+      <div class="card"  data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1000">
+        <img src="./images/hero-bg.jpg" alt="">
+        <h2>Somsa $1</h2>
+      </div>
+     </div>
+  </div>
+  <!-- end of menu  section -->
   <script src="js/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
