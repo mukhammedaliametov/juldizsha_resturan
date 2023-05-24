@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
 $global_font: "Lobster Two", cursive;
 $global_font2: "Roboto", sans-serif;
 $global_font3: "Raleway", sans-serif;
+$global_font4:  'Open Sans', sans-serif;
 $global_color: #f0c308;
 
 @mixin global-logo {
@@ -272,7 +274,7 @@ header {
 
   }
 
-  
+
   @media only screen and(max-width:920px) {
     & {
       width: 100%;
@@ -281,12 +283,94 @@ header {
       .cards {
         display: block;
         padding: 15px 30px;
-        .card{
-          img{
+
+        .card {
+          img {
             width: 300px;
           }
         }
       }
     }
+  }
+}
+
+#baylanis {
+  width: 100%;
+  height: 90vh;
+
+  .h1 {
+    text-align: center;
+    padding-top: 30px;
+    text-align: center;
+    font-family: $global_font;
+    padding-bottom: 30px;
+  }
+
+  .footer-title {
+    background-image: url(../images/Canoe-Interior-Evening-Vibes-5170.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 70vh;
+    color: #fff;
+
+    h1 {
+      width: 50%;
+      text-align: left;
+      margin-left: 500px;
+      padding-top: 100px;
+      font-family: $global_font;
+    }
+  }
+  footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 40px;
+    color: #fff;
+    background: rgb(48, 166, 109);
+    background: linear-gradient(90deg, rgba(48, 166, 109, 1) 14%, rgba(14, 180, 207, 1) 38%, rgba(25, 96, 111, 1) 94%);
+  .footer-card1{
+    width: 250px;
+    h1{
+      font-family: $global_font;
+      padding: 5px;
+    }
+    p{
+      font-family: $global_font4;
+      font-weight: 1;
+    }
+    .icons{
+      i{
+        padding: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+  .dooter-cards{
+    display: flex;
+  }
+  .footer-card2{
+    display:grid;
+    padding: 10px 40px;
+    a{
+      text-decoration: none;
+      font-family: $global_font2;
+      color: #fff;
+      padding: 6px;
+    }
+  }
+  .footer-card3{
+    display: grid;
+    h2{
+      font-family: $global_font3;
+    }
+    a{
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
   }
 }

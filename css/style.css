@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 * {
@@ -182,5 +183,65 @@ header {
         padding: 15px 30px; }
         #menu .cards .card img {
           width: 300px; } }
+
+#baylanis {
+  width: 100%;
+  height: 90vh; }
+  #baylanis .h1 {
+    text-align: center;
+    padding-top: 30px;
+    text-align: center;
+    font-family: "Lobster Two", cursive;
+    padding-bottom: 30px; }
+  #baylanis .footer-title {
+    background-image: url(../images/Canoe-Interior-Evening-Vibes-5170.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 70vh;
+    color: #fff; }
+    #baylanis .footer-title h1 {
+      width: 50%;
+      text-align: left;
+      margin-left: 500px;
+      padding-top: 100px;
+      font-family: "Lobster Two", cursive; }
+  #baylanis footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 40px;
+    color: #fff;
+    background: #30a66d;
+    background: linear-gradient(90deg, #30a66d 14%, #0eb4cf 38%, #19606f 94%); }
+    #baylanis footer .footer-card1 {
+      width: 250px; }
+      #baylanis footer .footer-card1 h1 {
+        font-family: "Lobster Two", cursive;
+        padding: 5px; }
+      #baylanis footer .footer-card1 p {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 1; }
+      #baylanis footer .footer-card1 .icons i {
+        padding: 10px;
+        cursor: pointer; }
+    #baylanis footer .dooter-cards {
+      display: flex; }
+    #baylanis footer .footer-card2 {
+      display: grid;
+      padding: 10px 40px; }
+      #baylanis footer .footer-card2 a {
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        color: #fff;
+        padding: 6px; }
+    #baylanis footer .footer-card3 {
+      display: grid; }
+      #baylanis footer .footer-card3 h2 {
+        font-family: "Raleway", sans-serif; }
+      #baylanis footer .footer-card3 a {
+        text-decoration: none;
+        color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
