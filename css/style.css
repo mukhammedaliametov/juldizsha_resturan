@@ -149,7 +149,8 @@ header {
         font-weight: 700; }
   @media only screen and (max-width: 920px) {
     #about {
-      padding: 10px 30px; }
+      padding: 10px 30px;
+      height: 50vh; }
       #about .about-title {
         padding: 20px 30px; }
       #about h1 {
@@ -176,13 +177,17 @@ header {
         width: 350px; }
   @media only screen and (max-width: 920px) {
     #menu {
-      width: 100%;
       height: 150vh; }
+      #menu h1 {
+        padding: 10px;
+        padding-bottom: 0px; }
       #menu .cards {
         display: block;
-        padding: 15px 30px; }
+        padding: 30px 10px; }
         #menu .cards .card img {
-          width: 300px; } }
+          width: 300px; }
+        #menu .cards #card-2 {
+          display: none; } }
 
 #baylanis {
   width: 100%;
@@ -201,12 +206,14 @@ header {
     width: 100%;
     height: 70vh;
     color: #fff; }
-    #baylanis .footer-title h1 {
+    #baylanis .footer-title .h1-2 {
+      display: none; }
+    #baylanis .footer-title .text {
       width: 50%;
       text-align: left;
       margin-left: 500px;
       padding-top: 100px;
-      font-family: "Lobster Two", cursive; }
+      font-family: "Roboto", sans-serif; }
   #baylanis footer {
     display: flex;
     justify-content: space-between;
@@ -226,7 +233,7 @@ header {
       #baylanis footer .footer-card1 .icons i {
         padding: 10px;
         cursor: pointer; }
-    #baylanis footer .dooter-cards {
+    #baylanis footer .footer-cards {
       display: flex; }
     #baylanis footer .footer-card2 {
       display: grid;
@@ -240,8 +247,35 @@ header {
       display: grid; }
       #baylanis footer .footer-card3 h2 {
         font-family: "Raleway", sans-serif; }
+      #baylanis footer .footer-card3 p {
+        font-family: "Open Sans", sans-serif; }
       #baylanis footer .footer-card3 a {
         text-decoration: none;
-        color: #fff; }
+        color: #fff;
+        font-family: "Roboto", sans-serif; }
+  @media only screen and (max-width: 920px) {
+    #baylanis .h1 {
+      display: none; }
+    #baylanis .footer-title {
+      height: 50vh;
+      display: block;
+      color: #f0c308;
+      text-align: center; }
+      #baylanis .footer-title .h1-2 {
+        font-family: "Lobster Two", cursive;
+        display: block; }
+      #baylanis .footer-title .text {
+        margin-left: 0;
+        padding: 10px 30px;
+        width: 100%;
+        font-size: 1rem; }
+    #baylanis footer {
+      display: grid; }
+      #baylanis footer .footer-card2 {
+        padding: 5px 0;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff; }
+      #baylanis footer .footer-cards {
+        display: grid; } }
 
 /*# sourceMappingURL=style.css.map */
