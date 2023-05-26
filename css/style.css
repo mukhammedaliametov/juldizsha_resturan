@@ -167,25 +167,39 @@ header {
     font-family: "Lobster Two", cursive;
     padding-bottom: 30px; }
   #menu .cards {
-    padding: 10px 60px;
+    padding: 5px 5px;
     text-align: center;
     display: grid;
-    grid-template-columns: auto auto auto; }
+    grid-template-columns: auto auto auto auto auto; }
     #menu .cards .card {
-      padding: 15px 15px; }
+      background: #70c49c;
+      background: linear-gradient(90deg, #70c49c 19%, #94dde9 57%, #feffff 99%);
+      align-items: center;
+      display: flex;
+      padding: 15px 15px;
+      border-bottom-left-radius: 30%;
+      border-top-left-radius: 30%;
+      margin: 10px;
+      font-family: "Raleway", sans-serif;
+      width: 230px;
+      font-size: .9rem; }
       #menu .cards .card img {
-        width: 350px; }
+        border-radius: 50%;
+        width: 120px;
+        height: 120px; }
   @media only screen and (max-width: 920px) {
     #menu {
-      height: 150vh; }
+      height: 380vh; }
       #menu h1 {
         padding: 10px;
         padding-bottom: 0px; }
       #menu .cards {
         display: block;
-        padding: 30px 10px; }
-        #menu .cards .card img {
+        padding: 30px 30px; }
+        #menu .cards .card {
           width: 300px; }
+          #menu .cards .card img {
+            width: 120px; }
         #menu .cards #card-2 {
           display: none; } }
 
